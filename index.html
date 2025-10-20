@@ -27,10 +27,10 @@
       <nav
         class="fixed w-full bg-black/90 backdrop-blur-sm border-b border-gray-800 z-50 p-3"
       >
-        <div class="w-full mx-auto px-6 flex justify-between items-center h-16">
+        <div class="w-full mx-auto px-6 flex justify-between items-center">
           <!-- Logo -->
-          <a href="#" class="w-16 h-16 bg-white rounded-full"
-            ><img src="./img/Logo.png" alt="Logo"
+          <a href="#" class="w-24 h-24 bg-white rounded-full"
+            ><img src="./assets/img/Logo.png" alt="Logo" class="rounded-full"
           /></a>
           <!-- Botón hamburguesa -->
           <button
@@ -154,49 +154,52 @@
           <div class="flex justify-center flex-wrap gap-6">
             <!-- HTML -->
             <div
-              class="flex flex-col items-center gap-2 px-10 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
             >
-              <i class="fab fa-html5 text-3xl" style="color: #e34f26"></i>
+              <img src="./assets/icons/icons8-html.svg" class="w-12" />
               HTML
             </div>
 
             <!-- CSS -->
             <div
-              class="flex flex-col items-center gap-2 px-10 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
             >
-              <i class="fab fa-css3-alt text-3xl" style="color: #1572b6"></i>
+              <img src="./assets/icons/icons8-css.svg" class="w-12" />
               CSS
             </div>
 
             <!-- Tailwind -->
-            <div
-              class="flex flex-col items-center gap-2 px-10 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+            <!-- <div
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
             >
-              <i class="fab fa-tailwind text-8xl" style="color: #06b6d4"></i>
+              <img src="./assets/icons/icons8-tailwind.svg" class="w-12" />
               Tailwind
-            </div>
+            </div> -->
 
             <!-- JavaScript -->
             <div
-              class="flex flex-col items-center gap-2 px-10 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
             >
-              <i class="fab fa-js-square text-3xl" style="color: #f7df1e"></i>
+              <img src="./assets/icons/icons8-js.svg" class="w-12" />
               JavaScript
             </div>
 
             <!-- C -->
             <div
-              class="flex flex-col items-center gap-2 px-10 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
             >
-              <i class="fas fa-code text-3xl" style="color: #00599c"></i>
+              <img src="./assets/icons/icons8-c.svg" class="w-12" />
               C
             </div>
 
             <!-- GitHub -->
             <div
-              class="flex flex-col items-center gap-2 px-10 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
             >
-              <i class="fab fa-github text-3xl" style="color: #181717"></i>
+              <img
+                src="./assets/icons/icons8-github.svg"
+                class="w-12 bg-white"
+              />
               GitHub
             </div>
           </div>
@@ -204,14 +207,25 @@
 
         <!-- Contacto -->
         <section id="contact" class="py-20 px-6 md:px-20">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
             <!-- Título full -->
             <h2
               class="text-3xl font-bold mb-8 text-primary text-center md:col-span-2"
             >
               Ponte en Contacto
             </h2>
-            <div>asdasdas</div>
+            <div class="flex gap-4 flex-col">
+              <div
+                class="bg-gray-900 p-10 w-5/6 h-40 rounded-xl shadow-lg hover:shadow-[0_0_20px_#7ED95750] transition"
+              >
+                Email
+              </div>
+              <div
+                class="bg-gray-900 p-10 w-5/6 h-40 rounded-xl shadow-lg hover:shadow-[0_0_20px_#7ED95750] transition"
+              >
+                Contacto
+              </div>
+            </div>
             <!-- Formulario -->
             <form class="flex flex-col gap-4">
               <input
@@ -239,16 +253,14 @@
       </main>
 
       <!-- Footer -->
-      <footer class="w-full flex items-center justify-center py-4 bg-secondary">
+      <footer class="w-full flex items-center justify-center py-4 bg-primary">
         <p class="text-black font-medium">
           © <span id="year"></span> Desarrollador Frontend. Todos los derechos
           reservados.
         </p>
       </footer>
     </div>
-
     <!-- Script -->
     <script src="./js/index.js"></script>
-    <script src="https://unpkg.com/heroicons@2.0.18/dist/heroicons.min.js"></script>
   </body>
 </html>
