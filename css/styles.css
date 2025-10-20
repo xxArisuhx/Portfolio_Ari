@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #7ed957;
+    --color-secondary: #b8d432;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+html {
+    scroll-behavior: smooth;
+}
