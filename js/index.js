@@ -20,3 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("content").classList.remove("hidden");
   }, 2000);
 });
+
+
+
+

@@ -8,10 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
     <title>Portfolio Arianna</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <style src></style>
   </head>
 
   <body class="min-h-screen bg-black text-white font-sans antialiased">
@@ -45,14 +43,14 @@
 
           <!-- Links -->
           <ul id="menu" class="hidden md:flex gap-6 text-white/80 font-medium">
-            <li><a href="#about" class="hover:text-primary">Sobre mí</a></li>
+            <li><a href="#about" class="primary-hover">Sobre mí</a></li>
             <li>
-              <a href="#projects" class="hover:text-primary">Proyectos</a>
+              <a href="#projects" class="primary-hover">Proyectos</a>
             </li>
             <li>
-              <a href="#skills" class="hover:text-primary">Habilidades</a>
+              <a href="#skills" class="primary-hover">Habilidades</a>
             </li>
-            <li><a href="#contact" class="hover:text-primary">Contacto</a></li>
+            <li><a href="#contact" class="primary-hover">Contacto</a></li>
           </ul>
         </div>
 
@@ -61,10 +59,10 @@
           id="mobile-menu"
           class="hidden md:hidden flex flex-col items-center gap-4 bg-black border-t border-gray-800 py-4"
         >
-          <a href="#about" class="hover:text-primary">Sobre mí</a>
-          <a href="#projects" class="hover:text-primary">Proyectos</a>
-          <a href="#skills" class="hover:text-primary">Habilidades</a>
-          <a href="#contact" class="hover:text-primary">Contacto</a>
+          <a href="#about" class="primary-hover">Sobre mí</a>
+          <a href="#projects" class="primary-hover">Proyectos</a>
+          <a href="#skills" class="primary-hover">Habilidades</a>
+          <a href="#contact" class="primary-hover">Contacto</a>
         </div>
       </nav>
 
@@ -88,7 +86,15 @@
           id="about"
           class="py-20 px-6 md:px-20 bg-gray-900 flex flex-col md:flex-row items-center gap-10"
         >
-          <div class="w-48 h-48 bg-gray-800 rounded-full"></div>
+          <div
+            class="w-48 h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg hover:shadow-[0_0_20px_#7ED95770] transition-all duration-500 mx-auto"
+          >
+            <img
+              src="/assets/img/personaje.png"
+              alt="me"
+              class="w-full h-full object-contain"
+            />
+          </div>
           <div>
             <h2 class="text-3xl font-bold mb-4 text-primary">Sobre Mí</h2>
             <p class="text-white/80 max-w-2xl">
@@ -105,40 +111,91 @@
           </h2>
           <div class="grid md:grid-cols-3 gap-8">
             <div
-              class="bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-[0_0_20px_#7ED95750] transition"
+              class="group relative bg-gray-900 p-5 rounded-2xl overflow-hidden shadow-lg border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_25px_#7ED95760]"
             >
-              <div class="h-40 bg-gray-700 rounded-lg mb-4"></div>
-              <h3 class="text-xl font-semibold mb-2 text-secondary">
-                Proyecto 1
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-[#7ED95720] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+              ></div>
+
+              <div
+                class="h-48 bg-gray-700 rounded-lg mb-5 relative overflow-hidden group-hover:scale-105 transition-transform duration-500"
+              >
+                <img
+                  src="./assets/img/proyecto1.png"
+                  alt="Proyecto 1"
+                  class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-500"
+                />
+              </div>
+              <h3 class="text-2xl font-semibold mb-3 text-primary">
+                Proyecto
               </h3>
+              <p class="text-white/70 mb-5 text-sm">
+                Interfaz moderna y responsive creada con HTML, Tailwind y
+                JavaScript.
+              </p>
+
               <button
-                class="px-4 py-2 bg-primary text-black rounded-md font-semibold hover:bg-secondary transition"
+                class="relative z-10 px-5 py-2 bg-primary text-black font-semibold rounded-md transition-all duration-500 hover:bg-secondary hover:scale-105"
               >
                 Ver Proyecto
               </button>
             </div>
             <div
-              class="bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-[0_0_20px_#7ED95750] transition"
+              class="group relative bg-gray-900 p-5 rounded-2xl overflow-hidden shadow-lg border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_25px_#7ED95760]"
             >
-              <div class="h-40 bg-gray-700 rounded-lg mb-4"></div>
-              <h3 class="text-xl font-semibold mb-2 text-secondary">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-[#7ED95720] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+              ></div>
+
+              <div
+                class="h-48 bg-gray-700 rounded-lg mb-5 relative overflow-hidden group-hover:scale-105 transition-transform duration-500"
+              >
+                <img
+                  src="./assets/img/proyecto1.png"
+                  alt="Proyecto 1"
+                  class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-500"
+                />
+              </div>
+              <h3 class="text-2xl font-semibold mb-3 text-primary">
                 Proyecto 1
               </h3>
+              <p class="text-white/70 mb-5 text-sm">
+                Interfaz moderna y responsive creada con HTML, Tailwind y
+                JavaScript.
+              </p>
+
               <button
-                class="px-4 py-2 bg-primary text-black rounded-md font-semibold hover:bg-secondary transition"
+                class="relative z-10 px-5 py-2 bg-primary text-black font-semibold rounded-md transition-all duration-500 hover:bg-secondary hover:scale-105"
               >
                 Ver Proyecto
               </button>
             </div>
             <div
-              class="bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-[0_0_20px_#7ED95750] transition"
+              class="group relative bg-gray-900 p-5 rounded-2xl overflow-hidden shadow-lg border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_25px_#7ED95760]"
             >
-              <div class="h-40 bg-gray-700 rounded-lg mb-4"></div>
-              <h3 class="text-xl font-semibold mb-2 text-secondary">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-[#7ED95720] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+              ></div>
+
+              <div
+                class="h-48 bg-gray-700 rounded-lg mb-5 relative overflow-hidden group-hover:scale-105 transition-transform duration-500"
+              >
+                <img
+                  src="./assets/img/proyecto1.png"
+                  alt="Proyecto 1"
+                  class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-500"
+                />
+              </div>
+              <h3 class="text-2xl font-semibold mb-3 text-primary">
                 Proyecto 1
               </h3>
+              <p class="text-white/70 mb-5 text-sm">
+                Interfaz moderna y responsive creada con HTML, Tailwind y
+                JavaScript.
+              </p>
+
               <button
-                class="px-4 py-2 bg-primary text-black rounded-md font-semibold hover:bg-secondary transition"
+                class="relative z-10 px-5 py-2 bg-primary text-black font-semibold rounded-md transition-all duration-500 hover:bg-secondary hover:scale-105"
               >
                 Ver Proyecto
               </button>
@@ -153,24 +210,25 @@
           </h2>
           <div class="flex justify-center flex-wrap gap-6">
             <!-- HTML -->
+
             <div
-              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_20px_#7ED95760] hover:bg-gray-800 hover:scale-105 group"
             >
-              <img src="./assets/icons/icons8-html.svg" class="w-12" />
+              <i class="fab fa-html5 text-5xl text-primary"></i>
               HTML
             </div>
 
             <!-- CSS -->
             <div
-              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_20px_#7ED95760] hover:bg-gray-800 hover:scale-105 group"
             >
-              <img src="./assets/icons/icons8-css.svg" class="w-12" />
+              <i class="fab fa-css3-alt text-primary text-5xl"></i>
               CSS
             </div>
 
             <!-- Tailwind -->
             <!-- <div
-              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_20px_#7ED95760] hover:bg-gray-800 hover:scale-105 group"
             >
               <img src="./assets/icons/icons8-tailwind.svg" class="w-12" />
               Tailwind
@@ -178,28 +236,25 @@
 
             <!-- JavaScript -->
             <div
-              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_20px_#7ED95760] hover:bg-gray-800 hover:scale-105 group"
             >
-              <img src="./assets/icons/icons8-js.svg" class="w-12" />
+              <i class="fab fa-js-square text-primary text-5xl"></i>
               JavaScript
             </div>
 
             <!-- C -->
             <div
-              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_20px_#7ED95760] hover:bg-gray-800 hover:scale-105 group"
             >
-              <img src="./assets/icons/icons8-c.svg" class="w-12" />
+              <i class="fa-solid fa-c text-primary text-5xl"></i>
               C
             </div>
 
             <!-- GitHub -->
             <div
-              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium hover:text-primary transition"
+              class="flex flex-col items-center gap-2 w-48 py-3 bg-black rounded-xl border border-primary text-white font-medium border border-gray-800 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_20px_#7ED95760] hover:bg-gray-800 hover:scale-105 group"
             >
-              <img
-                src="./assets/icons/icons8-github.svg"
-                class="w-12 bg-white"
-              />
+              <i class="fa-brands fa-github text-primary text-5xl"></i>
               GitHub
             </div>
           </div>
@@ -215,33 +270,65 @@
               Ponte en Contacto
             </h2>
             <div class="flex gap-4 flex-col">
+              <!-- email -->
               <div
-                class="bg-gray-900 p-10 w-5/6 h-40 rounded-xl shadow-lg hover:shadow-[0_0_20px_#7ED95750] transition"
+                class="flex items-center flex-col md:flex-row gap-5 bg-black border border-gray-800 rounded-xl p-6 w-full hover:shadow-[0_0_20px_#7ED95760] transition-all duration-500 hover:-translate-y-1"
               >
-                Email
+                <i
+                  class="fa-solid fa-envelope text-4xl text-primary group-hover:scale-110 transition-transform duration-500"
+                ></i>
+                <div>
+                  <h3
+                    class="text-lg font-semibold text-white/90 text-center md:text-left"
+                  >
+                    Correo
+                  </h3>
+                  <p class="text-white/70">arianna@example.com</p>
+                </div>
               </div>
+              <!-- Teléfono -->
               <div
-                class="bg-gray-900 p-10 w-5/6 h-40 rounded-xl shadow-lg hover:shadow-[0_0_20px_#7ED95750] transition"
+                class="flex items-center flex-col md:flex-row gap-5 bg-black border border-gray-800 rounded-xl p-6 w-full hover:shadow-[0_0_20px_#7ED95760] transition-all duration-500 hover:-translate-y-1"
               >
-                Contacto
+                <i
+                  class="fa-solid fa-phone text-4xl text-primary group-hover:scale-110 transition-transform duration-500"
+                ></i>
+                <div>
+                  <h3
+                    class="text-lg font-semibold text-white/90 text-center md:text-left"
+                  >
+                    Teléfono
+                  </h3>
+                  <p class="text-white/70">+506 8888-8888</p>
+                </div>
               </div>
             </div>
             <!-- Formulario -->
-            <form class="flex flex-col gap-4">
+            <form
+              action="https://formsubmit.co/ariamela.trujillo@gmail.com"
+              method="POST"
+              class="flex flex-col gap-4"
+            >
               <input
                 type="text"
+                name="name"
                 placeholder="Nombre"
+                required
                 class="bg-gray-900 p-3 rounded-md text-white outline-none"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Correo"
+                required
                 class="bg-gray-900 p-3 rounded-md text-white outline-none"
               />
               <textarea
+                name="message"
                 placeholder="Mensaje"
                 class="bg-gray-900 p-3 rounded-md text-white outline-none h-32"
               ></textarea>
+              <input type="hidden" name="_captcha" value="false" />
               <button
                 class="bg-primary text-black font-semibold py-3 rounded-md hover:bg-secondary transition"
               >
@@ -251,10 +338,9 @@
           </div>
         </section>
       </main>
-
       <!-- Footer -->
       <footer class="w-full flex items-center justify-center py-4 bg-primary">
-        <p class="text-black font-medium">
+        <p class="text-black font-medium text-center">
           © <span id="year"></span> Desarrollador Frontend. Todos los derechos
           reservados.
         </p>
