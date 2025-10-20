@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <title>Portfolio Arianna</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Básico -->
+  <title>Portafolio Frontend de Arianna Hernández | Desarrolladora Web</title>
+  <meta name="description" content="Portafolio web de Arianna Hernández, desarrolladora frontend. Proyectos, habilidades y contacto. Aprende más sobre mis trabajos y experiencia en desarrollo web." />
+  <meta name="keywords" content="Portafolio web, Desarrolladora frontend, Arianna Hernández, HTML, CSS, JavaScript, Tailwind, proyectos web, desarrollo web" />
+  <meta name="author" content="Arianna Hernández" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/img/Logo.png" type="logo" />
+
+  <!-- CSS y JS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
 
   <body class="min-h-screen bg-black text-white font-sans antialiased">
     <!-- Loader -->
@@ -43,14 +52,14 @@
 
           <!-- Links -->
           <ul id="menu" class="hidden md:flex gap-6 text-white/80 font-medium">
-            <li><a href="#about" class="primary-hover">Sobre mí</a></li>
+            <li><a href="about" class="primary-hover">Sobre mí</a></li>
             <li>
-              <a href="#projects" class="primary-hover">Proyectos</a>
+              <a href="projects" class="primary-hover">Proyectos</a>
             </li>
             <li>
-              <a href="#skills" class="primary-hover">Habilidades</a>
+              <a href="skills" class="primary-hover">Habilidades</a>
             </li>
-            <li><a href="#contact" class="primary-hover">Contacto</a></li>
+            <li><a href="contact" class="primary-hover">Contacto</a></li>
           </ul>
         </div>
 
@@ -352,6 +361,7 @@
               ></textarea>
               <input type="hidden" name="_captcha" value="false" />
               <button
+              type="submit"
                 class="bg-primary text-black font-semibold py-3 rounded-md hover:bg-secondary transition"
               >
                 Enviar Mensaje
